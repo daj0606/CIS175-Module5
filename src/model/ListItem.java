@@ -58,4 +58,10 @@ public class ListItem {
 	public void setRank(String rank) {
 		this.rank = rank;
 	}
+
+	@Override
+	public String toString() {
+		return "ListItem [id=" + id + ", game=" + game + ", rank=" + rank + "]";
+	}
+	
 }

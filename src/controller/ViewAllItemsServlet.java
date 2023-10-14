@@ -29,7 +29,7 @@ public class ViewAllItemsServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		ListItemHelper dao = new ListItemHelper();
 		request.setAttribute("allItems", dao.showAllItems());
-		String path = "/shopping-list.jsp";
+		String path = "/ranks-list.jsp";
 		if(dao.showAllItems().isEmpty()){
 			path = "/index.html";
 		}
